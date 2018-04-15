@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Categories=Game;ActionGame;AdventureGame;
+Exec=java -jar /opt/minecraft/bin/Minecraft.jar
+Path=/opt/minecraft/bin/
+Icon=minecraft.png
+Terminal=false
+Type=Application
+Name=Minecraft
+Comment=Episode one. In which we craft mines on CentOS 7.
