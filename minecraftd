@@ -1,0 +1,33 @@
+### BEGIN INIT INFO
+# Provides:          minecraftd
+# Required-Start:    $networking
+# Required-Stop:     $networking
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# X-Interactive:     true
+# Short-Description: minecraft server daemon
+# Description:       minecraft server version 1.12.2 daemon
+#                    because sysvinit is not dead, and neither is minecraft :)
+### END INIT INFO
+
+#first run at sysvinit script for minecraft server running on the local network
+
+#!/bin/bash
+#
+#
+#example of java startup command for minecraft jar
+#java -Xmx4096M -Xms4096M -jar server.jar nogui
+#===
+#
+#Java env set below
+JARFILE=/home/minecraft-admin/server.jar
+MAXMEMPOOL=4g
+INITMEMPOOL=1g
+#
+#We want to run this guy under the minecraft user
+#
+MINECRAFT_USER=minecraft-admin
+HOMEDIR=$(echo ~minecraft-admin)
+STARTSCRIPT=$HOMDIR/bin/start_minecraft.sh
+#
+start-stop-daemon --start --quiet -u $MINECRAFT_USER -g $MINECRAFT_USER --exec nohup $STARTSCRIPT > /dev/null 2>&1 &
