@@ -1,2 +1,2 @@
 # minecraft-superfuntime
-all the things for keeping the little miners here melting my minecraft vm's
+Because I'm really a 7 year old IRL, and minecraft is dope. 
