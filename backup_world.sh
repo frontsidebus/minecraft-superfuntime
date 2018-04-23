@@ -9,10 +9,10 @@
 #remote user, ip, and destination directory
 USER=<backup dest user>
 DEST=<backup dest host>
-DESTDIR=/home/minecraft/backups/
+DESTDIR=<backup dest dir>
 #local files
-WORLDDIR=/home/minecraft-admin/world/
-BACKUPDIR=/home/minecraft-admin/backups/
+WORLDDIR=<local world dir>
+BACKUPDIR=<stage backups here>
 DATE=$(date +%Y%m%d)
 BACKUPFILE=$DATE.tar.gz
 #local ttl in days, before local backups are removed
