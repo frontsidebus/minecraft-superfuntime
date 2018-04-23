@@ -1,0 +1,7 @@
+ For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+#
+## Minecraft world backup script runs @2am every monrning
+  0 2  *   *   *     backup_world.sh
+  0 3  *   *   *     log_cleanup.sh
