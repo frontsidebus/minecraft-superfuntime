@@ -1,5 +1,5 @@
 # minecraft-superfuntime
-Because I'm really a 7 year old IRL, and minecraft is dope.
+Because I'm really a 7 year old heart, and minecraft is dope.
 
 Deps:
 - minecraft server version 1.12.2
